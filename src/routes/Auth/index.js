@@ -1,13 +1,19 @@
 import React from 'react';
+import { Row, Col } from 'antd';
 
-import LoginForm from 'forms/Login';
-import Box from '@material-ui/core/Box';
+import FormTitle from 'components/forms/Title';
+import LoginForm from 'components/forms/Login';
+
 
 export default function () {
   return (
-    <Box>
-      <h5>Login</h5>
-      <LoginForm />
-    </Box>
+    <div>
+      <Row justify="center">
+        <Col span={4}>
+          <FormTitle>Login</FormTitle>
+          <LoginForm />
+        </Col>
+      </Row>
+    </div>
   )
 }

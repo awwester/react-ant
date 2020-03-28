@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm, Controller } from "react-hook-form";
-import Input from "@material-ui/core/Input";
+import { Input, Button } from "antd";
+
 
 export default function App() {
   const { control, handleSubmit } = useForm();
@@ -24,7 +25,7 @@ export default function App() {
       />
       </p>
 
-      <input type="submit" />
+      <Button type="primary">Login</Button>
     </form>
   );
 }
