@@ -1,7 +1,8 @@
 import React from 'react';
-import { PageHeader, Button } from 'antd';
+import { PageHeader } from 'antd';
 
 import DashboardContent from 'components/layout/DashboardContent';
+import ProductModal from 'components/modals/Product';
 
 export default function () {
   return (
@@ -11,7 +12,7 @@ export default function () {
         subTitle="All the items that you have purchased"
         ghost={false}
         extra={[
-          <Button type="secondary" key="1">Create New</Button>
+          <ProductModal key="1">Create new</ProductModal>
         ]}
       />
       <DashboardContent>
