@@ -1,6 +1,6 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
-import { Form, Input, Button } from 'antd';
+import React from "react";
+import { useHistory } from "react-router-dom";
+import { Form, Input, Button } from "antd";
 
 const layout = {
   labelCol: { span: 8 },
@@ -14,12 +14,12 @@ export default function LoginForm() {
   const history = useHistory();
 
   const onFinish = values => {
-    console.log('Success:', values);
-    history.push('/dashboard');
+    console.log("Success:", values);
+    history.push("/dashboard");
   };
 
   const onFinishFailed = errorInfo => {
-    console.log('Failed:', errorInfo);
+    console.log("Failed:", errorInfo);
   };
 
   return (
@@ -32,7 +32,7 @@ export default function LoginForm() {
       <Form.Item
         label="Username"
         name="username"
-        rules={[{ required: true, message: 'Please input your username' }]}
+        rules={[{ required: true, message: "Please input your username" }]}
       >
         <Input autoFocus />
       </Form.Item>
@@ -40,7 +40,7 @@ export default function LoginForm() {
       <Form.Item
         label="Password"
         name="password"
-        rules={[{ required: true, message: 'Please input your password' }]}
+        rules={[{ required: true, message: "Please input your password" }]}
       >
         <Input.Password />
       </Form.Item>

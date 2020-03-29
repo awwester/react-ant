@@ -1,13 +1,13 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
-import { Button } from 'antd';
+import React from "react";
+import { useHistory } from "react-router-dom";
+import { Button } from "antd";
 
 export default function ButtonAppBar() {
   const history = useHistory();
 
   const handleLoginClick = () => {
-    history.push('/auth');
-  }
+    history.push("/auth");
+  };
 
   return (
     <div>

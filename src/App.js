@@ -1,12 +1,12 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import LandingRoute from 'routes/Landing';
-import AuthRoute from 'routes/Auth';
-import DashboardRoute from 'routes/Dashboard';
+import LandingRoute from "routes/Landing";
+import AuthRoute from "routes/Auth";
+import DashboardRoute from "routes/Dashboard";
 
 
-import styles from './App.module.less'
+import styles from "./App.module.less";
 
 function App() {
   return (

@@ -1,7 +1,7 @@
-import React from 'react';
-import { PageHeader, Button } from 'antd';
+import React from "react";
+import { PageHeader, Button } from "antd";
 
-import DashboardContent from 'components/layout/DashboardContent';
+import DashboardContent from "components/layout/DashboardContent";
 
 
 export default function () {
@@ -12,12 +12,12 @@ export default function () {
         subTitle="Click into a purchase to see its products."
         ghost={false}
         extra={[
-          <Button type="primary" key="1">Create New</Button>
+          <Button type="primary" key="1">Create New</Button>,
         ]}
       />
       <DashboardContent>
         These are the purchases, which are correlated to receipts.
       </DashboardContent>
     </React.Fragment>
-  )
+  );
 }

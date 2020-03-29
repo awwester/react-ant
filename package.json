@@ -22,7 +22,15 @@
     "eject": "react-app-rewired eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "indent": ["error", 2],
+      "quotes": ["error", "double"],
+      "semi": ["error", "always"],
+      "comma-dangle": ["error", "always-multiline"],
+      "no-cond-assign": ["error", "always"],
+      "no-console": "off"
+  }
   },
   "browserslist": {
     "production": [

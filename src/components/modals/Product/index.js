@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import { Modal, Button } from 'antd';
+import { Modal, Button } from "antd";
 
 export default function ProductModal(props) {
   const [visible, setVisible] = useState(false);

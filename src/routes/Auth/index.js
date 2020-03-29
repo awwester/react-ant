@@ -1,8 +1,8 @@
-import React from 'react';
-import { Row, Col } from 'antd';
+import React from "react";
+import { Row, Col } from "antd";
 
-import FormTitle from 'components/forms/Title';
-import LoginForm from 'components/forms/Login';
+import FormTitle from "components/forms/Title";
+import LoginForm from "components/forms/Login";
 
 
 export default function () {
@@ -15,5 +15,5 @@ export default function () {
         </Col>
       </Row>
     </div>
-  )
+  );
 }
