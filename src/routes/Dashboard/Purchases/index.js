@@ -3,19 +3,20 @@ import { PageHeader, Button } from 'antd';
 
 import DashboardContent from 'components/layout/DashboardContent';
 
+
 export default function () {
   return (
     <React.Fragment>
       <PageHeader
-        title="Products"
-        subTitle="All the items that you have purchased"
+        title="Purchases"
+        subTitle="Click into a purchase to see its products."
         ghost={false}
         extra={[
-          <Button type="secondary" key="1">Create New</Button>
+          <Button type="primary" key="1">Create New</Button>
         ]}
       />
       <DashboardContent>
-        These are the products.
+        These are the purchases, which are correlated to receipts.
       </DashboardContent>
     </React.Fragment>
   )

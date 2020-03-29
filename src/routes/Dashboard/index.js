@@ -2,13 +2,11 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import DashboardHomeRoute from 'routes/Dashboard/Home';
-import OrdersRoute from 'routes/Dashboard/Orders';
+import PurchasesRoute from 'routes/Dashboard/Purchases';
 import ProductsRoute from 'routes/Dashboard/Products';
 import DashboardNav from 'components/navigation/DashboardNav';
 
 import styles from './style.module.less';
-
-console.log(styles)
 
 export default function DashboardBase() {
   // Base route that renders the navigation and provides a router for dashboard routes.
@@ -22,7 +20,7 @@ export default function DashboardBase() {
             <DashboardHomeRoute />
           </Route>
           <Route path="/dashboard/purchases">
-            <OrdersRoute />
+            <PurchasesRoute />
           </Route>
           <Route path="/dashboard/products">
             <ProductsRoute />

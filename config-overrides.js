@@ -10,7 +10,7 @@ module.exports = override(
     javascriptEnabled: true,
     modifyVars: {
       '@primary-color': '#3eb489',
-      '@input-height-base': '40px',
+      '@input-height-base': '40px'
     },
   }),
 );
