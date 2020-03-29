@@ -1,46 +1,30 @@
 import React from 'react';
-import { Route, Switch, Link, useHistory } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import DashboardHomeRoute from 'routes/Dashboard/Home';
 import OrdersRoute from 'routes/Dashboard/Orders';
 import ProductsRoute from 'routes/Dashboard/Products';
+import DashboardNav from 'components/navigation/DashboardNav';
 
-export default function () {
-  let history = useHistory();
-
-  const handleLogout = () => {
-    console.log('handling..');
-    history.push("/");
-  }
-
+export default function DashboardBase() {
+  // Base route that renders the navigation and provides a router for dashboard routes.
   return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/dashboard">Dashboard</Link>
-          </li>
-          <li>
-            <Link to="/dashboard/orders">Orders</Link>
-          </li>
-          <li>
-            <Link to="/dashboard/products">Products</Link>
-          </li>
-        </ul>
-        <button onClick={handleLogout}>Logout</button>
-      </nav>
+    <React.Fragment>
+      <DashboardNav />
 
-      <Switch>
-        <Route path="/dashboard" exact>
-          <DashboardHomeRoute />
-        </Route>
-        <Route path="/dashboard/orders">
-          <OrdersRoute />
-        </Route>
-        <Route path="/dashboard/products">
-          <ProductsRoute />
-        </Route>
-      </Switch>
-    </div>
+      <div>
+        <Switch>
+          <Route path="/dashboard" exact>
+            <DashboardHomeRoute />
+          </Route>
+          <Route path="/dashboard/purchases">
+            <OrdersRoute />
+          </Route>
+          <Route path="/dashboard/products">
+            <ProductsRoute />
+          </Route>
+        </Switch>
+      </div>
+    </React.Fragment>
   )
 }
