@@ -1,31 +1,55 @@
-import React from "react";
-import { useForm, Controller } from "react-hook-form";
-import { Input, Button } from "antd";
+import React from 'react';
+import { useHistory } from 'react-router-dom';
+import { Form, Input, Button } from 'antd';
 
+const layout = {
+  labelCol: { span: 8 },
+  wrapperCol: { span: 16 },
+};
+const tailLayout = {
+  wrapperCol: { offset: 8, span: 16 },
+};
 
-export default function App() {
-  const { control, handleSubmit } = useForm();
-  const onSubmit = data => console.log(data);
+export default function LoginForm() {
+  const history = useHistory();
+
+  const onFinish = values => {
+    console.log('Success:', values);
+    history.push('/dashboard');
+  };
+
+  const onFinishFailed = errorInfo => {
+    console.log('Failed:', errorInfo);
+  };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <p>
-      <Controller
-        as={<Input />}
-        name="login"
-        control={control}
-      />
-      </p>
-      <p>
-      <Controller
-        as={<Input />}
-        name="password"
-        type="password"
-        control={control}
-      />
-      </p>
+    <Form
+      {...layout}
+      name="login-form"
+      onFinish={onFinish}
+      onFinishFailed={onFinishFailed}
+    >
+      <Form.Item
+        label="Username"
+        name="username"
+        rules={[{ required: true, message: 'Please input your username' }]}
+      >
+        <Input autoFocus />
+      </Form.Item>
 
-      <Button type="primary">Login</Button>
-    </form>
+      <Form.Item
+        label="Password"
+        name="password"
+        rules={[{ required: true, message: 'Please input your password' }]}
+      >
+        <Input.Password />
+      </Form.Item>
+
+      <Form.Item {...tailLayout}>
+        <Button type="primary" htmlType="submit">
+          Submit
+        </Button>
+      </Form.Item>
+    </Form>
   );
-}
+};
