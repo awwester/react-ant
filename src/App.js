@@ -5,9 +5,12 @@ import LandingRoute from 'routes/Landing';
 import AuthRoute from 'routes/Auth';
 import DashboardRoute from 'routes/Dashboard';
 
+
+import styles from './App.module.less'
+
 function App() {
   return (
-    <div className="App">
+    <div className={styles.app}>
       <BrowserRouter>
         <Switch>
           <Route path="/" exact>

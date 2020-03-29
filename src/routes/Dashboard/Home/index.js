@@ -2,6 +2,73 @@ import React from 'react';
 
 export default function () {
   return (
-    <div>This is the main dashboard.</div>
+    <React.Fragment>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+      <p>This is the main dashboard.</p>
+    </React.Fragment>
   )
 }

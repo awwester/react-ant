@@ -6,13 +6,17 @@ import OrdersRoute from 'routes/Dashboard/Orders';
 import ProductsRoute from 'routes/Dashboard/Products';
 import DashboardNav from 'components/navigation/DashboardNav';
 
+import styles from './style.module.less';
+
+console.log(styles)
+
 export default function DashboardBase() {
   // Base route that renders the navigation and provides a router for dashboard routes.
   return (
-    <React.Fragment>
+    <div className={styles.dashboardContainer}>
       <DashboardNav />
 
-      <div>
+      <div className={styles.dashboardContent}>
         <Switch>
           <Route path="/dashboard" exact>
             <DashboardHomeRoute />
@@ -25,6 +29,6 @@ export default function DashboardBase() {
           </Route>
         </Switch>
       </div>
-    </React.Fragment>
+    </div>
   )
 }

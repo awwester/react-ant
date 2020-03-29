@@ -5,20 +5,17 @@ import { FundFilled, ShoppingCartOutlined, StarFilled, UnlockFilled } from '@ant
 
 import DashboardMenuItem from '../DashboardMenuItem';
 
+import styles from './style.module.less';
+
 export default function DashboardNav() {
   let history = useHistory();
 
   const handleLogout = () => history.push("/");
   const handleNav = url => history.push(url);
 
-  const menuStyle = {
-    width: 256,
-    height: '100%'
-  }
-
   return (
     <Menu
-      style={menuStyle}
+      className={styles.menuStyle}
       defaultSelectedKeys={['1']}
       defaultOpenKeys={['sub1']}
       mode="inline"
@@ -36,7 +33,7 @@ export default function DashboardNav() {
         <StarFilled />
         <span>Products</span>
       </DashboardMenuItem>
-      <DashboardMenuItem key="12" onClick={handleLogout}>
+      <DashboardMenuItem key="12" onClick={handleLogout} className={styles.logoutItem}>
         <UnlockFilled />
         Logout
       </DashboardMenuItem>
