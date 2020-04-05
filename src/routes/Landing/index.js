@@ -1,17 +1,22 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
-import { Button } from "antd";
 
-export default function ButtonAppBar() {
-  const history = useHistory();
+import TopnavLayout from "layouts/Topnav";
+import LandingHeader from "components/navigation/LandingHeader";
+import LandingSection from "components/sections/Landing";
 
-  const handleLoginClick = () => {
-    history.push("/auth");
-  };
+export default function LandingRoute() {
 
   return (
-    <div>
-      <Button onClick={handleLoginClick} type="primary">Login</Button>
-    </div>
+    <TopnavLayout header={<LandingHeader />}>
+      <LandingSection>
+        This is the first section
+      </LandingSection>
+      <LandingSection>
+        Lorem ipsum something
+      </LandingSection>
+      <LandingSection>
+        And finally....
+      </LandingSection>
+    </TopnavLayout>
   );
 }
