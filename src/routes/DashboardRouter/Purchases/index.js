@@ -1,7 +1,7 @@
 import React from "react";
 import { PageHeader, Button } from "antd";
 
-import DashboardContent from "components/layout/DashboardContent";
+import DashboardContent from "layouts/DashboardContent";
 
 
 export default function () {

@@ -1,10 +1,10 @@
 import React from "react";
 import { Menu } from "antd";
 
-export default function DashboardMenuItem(props) {
+export default function SidenavItem({children, ...props}) {
   return (
     <Menu.Item { ...props }>
-      {props.children}
+      {children}
     </Menu.Item>
   );
 }

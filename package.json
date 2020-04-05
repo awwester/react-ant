@@ -30,7 +30,7 @@
       "comma-dangle": ["error", "always-multiline"],
       "no-cond-assign": ["error", "always"],
       "no-console": "off"
-  }
+    }
   },
   "browserslist": {
     "production": [

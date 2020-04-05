@@ -1,7 +1,7 @@
 import React from "react";
 import { PageHeader } from "antd";
 
-import DashboardContent from "components/layout/DashboardContent";
+import DashboardContent from "layouts/DashboardContent";
 import ProductModal from "components/modals/Product";
 
 export default function () {
