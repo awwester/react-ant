@@ -6,11 +6,10 @@ import { LoginOutlined } from "@ant-design/icons";
 import styles from "./style.module.less";
 
 export default function LandingHeader() {
-  const history = useHistory();
+  // Render the header for the landing page on desktop.
 
-  const handleLoginClick = () => {
-    history.push("/auth");
-  };
+  const history = useHistory();
+  const handleLoginClick = () => history.push("/auth");
 
   return (
     <Layout.Header>

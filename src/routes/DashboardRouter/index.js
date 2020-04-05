@@ -4,12 +4,12 @@ import { Route, Switch } from "react-router-dom";
 import DashboardHomeRoute from "routes/DashboardRouter/Home";
 import PurchasesRoute from "routes/DashboardRouter/Purchases";
 import ProductsRoute from "routes/DashboardRouter/Products";
-import SidebarLayout from "layouts/Sidebar";
+import DashboardLayout from "layouts/DashboardNavigation";
 
 export default function DashboardBase(props) {
   // Base route that renders the navigation and provides a router for dashboard routes.
   return (
-    <SidebarLayout>
+    <DashboardLayout>
       <Switch>
         <Route path="/dashboard/nav1">
           <DashboardHomeRoute />
@@ -21,6 +21,6 @@ export default function DashboardBase(props) {
           <ProductsRoute />
         </Route>
       </Switch>
-    </SidebarLayout>
+    </DashboardLayout>
   );
 }
