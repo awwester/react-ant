@@ -11,13 +11,13 @@ export default function DashboardBase(props) {
   return (
     <SidebarLayout>
       <Switch>
-        <Route path="/dashboard" exact>
+        <Route path="/dashboard/nav1">
           <DashboardHomeRoute />
         </Route>
-        <Route path="/dashboard/purchases">
+        <Route path="/dashboard/nav2">
           <PurchasesRoute />
         </Route>
-        <Route path="/dashboard/products">
+        <Route path="/dashboard/nav3">
           <ProductsRoute />
         </Route>
       </Switch>

@@ -11,6 +11,7 @@ module.exports = override(
     modifyVars: {
       "@primary-color": "#3eb489",
       "@input-height-base": "40px",
+      "@menu-inline-toplevel-item-height": "50px",
     },
   }),
 );
