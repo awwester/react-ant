@@ -9,7 +9,7 @@ export default function () {
   return (
     <div>
       <Row justify="center">
-        <Col span={6}>
+        <Col sm={18} md={6}>
           <FormTitle>Login</FormTitle>
           <LoginForm />
         </Col>
