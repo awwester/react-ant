@@ -12,15 +12,8 @@ const tailLayout = {
 
 export default function LoginForm() {
   const history = useHistory();
-
-  const onFinish = values => {
-    console.log("Success:", values);
-    history.push("/dashboard");
-  };
-
-  const onFinishFailed = errorInfo => {
-    console.log("Failed:", errorInfo);
-  };
+  const onFinish = values => history.push("/dashboard/nav1");
+  const onFinishFailed = errorInfo => console.log("Failed:", errorInfo);
 
   return (
     <Form

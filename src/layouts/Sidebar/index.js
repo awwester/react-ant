@@ -51,7 +51,7 @@ export default function SidebarLayout(props) {
         <div className={styles.logo} />
         <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
           {renderNavItems()}
-          <Menu.Item className={styles.logout}>
+          <Menu.Item className={styles.logout} onClick={() => history.push("/")}>
             <LogoutOutlined />
             Logout
           </Menu.Item>
