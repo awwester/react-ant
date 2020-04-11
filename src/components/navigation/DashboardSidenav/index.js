@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router";
+import PropType from "prop-types";
 import { Menu, Layout } from "antd";
 import { LogoutOutlined } from "@ant-design/icons";
 
@@ -36,3 +37,6 @@ export default function DashboardSideNav({ routeData }) {
   );
 }
 
+DashboardSideNav.propTypes = {
+  routeData: PropType.array.isRequired,
+};
